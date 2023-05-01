@@ -56,4 +56,9 @@ export class PokemonComponent {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.id}.png`;
   }
 
+  getPokemonAbilities(){
+    return this.pokemon.abilities.map(a => a.ability.name).join(' | ');
+  }
+ 
+
 }

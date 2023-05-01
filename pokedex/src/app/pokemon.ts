@@ -3,11 +3,18 @@ import { Types } from './types';
 export interface Pokemon
 {
   id: number;
-  name: string;
+  name: string; //
   height: number;
   weight: number;
-  types: Types[]
+  types:{
+    type: {
+        name: string
+    }
+  }[];
+  abilities: {
+      ability: {
+          name: string
+      }
+  }[];
 
-
-  //image.sprites.other.official-artwork.front_default : string;
 }

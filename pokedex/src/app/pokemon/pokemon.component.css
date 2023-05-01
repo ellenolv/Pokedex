@@ -1,5 +1,62 @@
 /*Declarar cores de cada tipo*/
 
+.card-title{
+  color: #0A285F;
+  font-weight: 600;
+  background-color: #0075be74;
+  font-size: 40px;
+  border-radius: 95px;
+
+}
+.card-text{
+  font-size: 20px ;
+  font-weight: 500;
+  display: flex;
+  
+
+}
+#id{
+  font-size:18px;
+  color: #678fee;
+}
+
+
+.card{
+  background-color: #FFFFFF;
+  border-radius: 90px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: none;
+  
+}
+
+
+
+
+
+.btn{
+  margin: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  background-color: #FFCC00;
+  border-color: #0A285F;
+  box-shadow: #D5A100;
+  color: #0A285F;
+  border-radius: 30px;
+  width: 6rem;
+  height: 3rem;
+  
+  transition: all 300ms ease-out;
+  
+}
+.btn:hover{
+  background-color:  #0A285F;
+  border-color: #FFCC00;
+  border-style: groove;
+  color: #FFCC00;
+  width: 6.5rem;
+  height: 3.5rem;
+}
 
 .normal{
   background-color: #a6a577;
