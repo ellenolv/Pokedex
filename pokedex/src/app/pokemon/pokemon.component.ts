@@ -59,6 +59,14 @@ export class PokemonComponent {
   getPokemonAbilities(){
     return this.pokemon.abilities.map(a => a.ability.name).join(' | ');
   }
+  
+  convertHeightToMeters(){
+    return this.pokemon.height / 10 + 'm';
+  }
+
+  convertWeightToKg(){
+    return this.pokemon.weight / 10 + 'kg';
+  }
  
 
 }

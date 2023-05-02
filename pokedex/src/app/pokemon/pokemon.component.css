@@ -20,7 +20,27 @@
   color: #678fee;
 }
 
+.type-pokemon{
+  border-radius: 90px;
+  width: 90px;
+  text-align: center;
+  padding: 5px;
+  
+  
+}
+/*
+.progress::-webkit-progress-bar {
+  display: flex;
+  align-items: center;
+  outline: 2px solid #000;
+  border-radius: 5px;
+}
 
+progress {
+  margin-left: 1rem;
+  border: none;
+}
+*/
 .card{
   background-color: #FFFFFF;
   border-radius: 90px;
@@ -28,8 +48,31 @@
   border: none;
   
 }
+.progress-bar{
+  border-radius: 100px;
+  color:#0075BE;
+}
 
+.stats{
+  width: auto;
+  height: auto;
+  font-size: small;
+}
 
+.title{
+  font-size: 18px;
+  color: #0075BE;
+
+}
+.title-number{
+  font-size: 16px;
+  color: #0A285F;
+}
+#stats-title{
+  color: #0A285F;
+  font-size: 25px;
+
+}
 
 
 
@@ -57,79 +100,95 @@
   width: 6.5rem;
   height: 3.5rem;
 }
-
-.normal{
+.normal,
+.progress-normal::-webkit-progress-value {
   background-color: #a6a577;
 }
 
-.grass  {
+.grass,
+.progress-grass::-webkit-progress-value {
   background-color: #77c850;
 }
 
-.fire {
+.fire,
+.progress-fire::-webkit-progress-value {
   background-color: #ee7f30;
 }
 
-.water  {
+.water,
+.progress-water::-webkit-progress-value {
   background-color: #678fee;
 }
 
-.electric {
+.electric,
+.progress-electric::-webkit-progress-value {
   background-color: #f7cf2e;
 }
 
-.ice {
+.ice,
+.progress-ice::-webkit-progress-value {
   background-color: #98d5d7;
 }
 
-.ground {
+.ground,
+.progress-ground::-webkit-progress-value {
   background-color: #dfbf69;
 }
 
-.flying {
+.flying,
+.progress-flying::-webkit-progress-value {
   background-color: #a98ff0;
 }
 
-.poison {
+.poison,
+.progress-poison::-webkit-progress-value {
   background-color: #a040a0;
 }
 
-.fighting {
+.fighting,
+.progress-fighting::-webkit-progress-value {
   background-color: #bf3029;
 }
 
-.psychic {
+.psychic,
+.progress-psychic::-webkit-progress-value {
   background-color: #f65687;
 }
 
-.dark {
+.dark,
+.progress-dark::-webkit-progress-value {
   background-color: #725847;
 }
 
-.rock {
+.rock,
+.progress-rock::-webkit-progress-value {
   background-color: #b8a137;
 }
 
-.bug {
+.bug,
+.progress-bug::-webkit-progress-value {
   background-color: #a8b720;
 }
 
-.ghost  {
+.ghost,
+.progress-ghost::-webkit-progress-value {
   background-color: #6e5896;
 }
 
-.steel {
+.steel,
+.progress-steel::-webkit-progress-value {
   background-color: #b9b7cf;
 }
 
-.dragon {
+.dragon,
+.progress-dragon::-webkit-progress-value {
   background-color: #6f38f6;
 }
 
-.fairy  {
+.fairy,
+.progress-fairy::-webkit-progress-value {
   background-color: #f9aec7;
 }
-
 
 
 /*ng class*/

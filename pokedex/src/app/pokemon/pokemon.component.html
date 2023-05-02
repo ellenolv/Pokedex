@@ -1,4 +1,4 @@
-<div class="container-xl text-center">
+<div class="container-fluid  text-center {{pokemon.types[0].type.name}} ">
 
   <div class="display-6">
     <img class="logo"  width="150px"   src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt="">
@@ -12,19 +12,33 @@
 </div>
 
 <!--card [[ngClass]="${type}"] -->
-<div class="card m-3  "  style="max-width: 1200px;">
+<div class="card m-3 text-center mx-auto "  style="max-width: 1200px;">
   <div class="row m-3">
     <div class="col-lg">
       <img [src]= "getImage()" width="500px"   heightclass="img-fluid rounded-start" [alt]="getImage">
     </div>
     <div class="col-lg">
       <div class="card-body">
-        <h5 class="card-title">{{pokemon.name}}</h5>
+        <h5 class="card-title {{pokemon.types[0].type.name}} ">{{pokemon.name}}</h5>
         <p class="card-text" id="id"> id: {{pokemon.id}} </p>
         <p class="card-text"> altura: {{pokemon.height}} </p>
         <p class="card-text"> peso: {{pokemon.weight}} </p>
-       <p class="card-text"> tipo: {{pokemon.types[0].type.name}} </p>
-       <p class="card-text">{{getPokemonAbilities()}}</p>
+       
+       <p class="card-text type-pokemon {{pokemon.types[0].type.name}}">{{pokemon.types[0].type.name}} </p>
+       <p class="card-text"> Habilidades: {{getPokemonAbilities()}}</p>
+
+       <div class="stats container-sm"  width="200px" height="100px">
+        <h1 id="stats-title">Stats</h1>
+        <div class="statsBar" *ngFor="let stat of pokemon.stats">
+          <div class="title">
+            <p class="title">{{stat.stat.name | uppercase }}:</p>
+          </div>
+          <div class="stat">
+            <p class="title-number">{{stat.base_stat}}</p>
+            <!--progress-{{pokemon.types[0].type.name}}-->
+            <progress class="progress progress-{{pokemon.types[0].type.name}}" value="{{stat.base_stat}}" max="150"></progress>
+          </div>
+        </div>
       </div>
     </div>
   </div>
